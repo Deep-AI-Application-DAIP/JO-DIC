@@ -1,0 +1,19 @@
+{
+  "max_disp": 64,
+  "feature_channels": 64,
+  "ldconv_points": 7,
+  "masa_heads": 4,
+  "flow_iters": 4,
+  "loss_weights": {
+    "disp": 1.0,
+    "flow": 1.0,
+    "consistency": 0.2
+  },
+  "intrinsics": {
+    "fx": 1200.0,
+    "fy": 1200.0,
+    "cx": 256.0,
+    "cy": 128.0,
+    "baseline": 80.0
+  }
+}
