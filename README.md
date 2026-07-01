@@ -4,8 +4,8 @@ This repository provides a compact PyTorch reproduction framework for **JO-DIC: 
 
 The project integrates the main algorithmic components described in the paper:
 
-* a CGI-Stereo-like binocular disparity estimation branch;
-* a RAFT-like temporal optical-flow estimation branch;
+* a binocular disparity estimation branch;
+* a temporal optical-flow estimation branch;
 * Linear Deformable Convolution (LDConv) for adaptive local speckle feature enhancement;
 * Manhattan Self-Attention (MaSA) for long-range spatial structural modeling;
 * spatial–temporal geometric consistency loss for joint optimization;
@@ -63,35 +63,16 @@ The core runnable implementation is located in the `jodic/` directory. The `data
 
 ---
 
-## 2. Dataset Placement
+## 2. Dataset
 
-The unprocessed Synthetic Speckle Dataset mentioned in the paper should be placed under:
+Only the original unprocessed Synthetic Speckle Dataset is provided. Processed data, pretrained weights, and the industrial airship experimental dataset are not included.
 
-```text
-data/SyntheticSpeckleDataset/
-```
-
-If the dataset is provided as a compressed file, place it as:
+The dataset can be downloaded from Baidu Netdisk:
 
 ```text
-data/SyntheticSpeckleDataset/raw.zip
+Download link: YOUR_BAIDU_NETDISK_LINK
+Extraction code: YOUR_EXTRACTION_CODE
 ```
-
-If the dataset is extracted, place the extracted files under:
-
-```text
-data/SyntheticSpeckleDataset/raw/
-```
-
-The current default training script does not directly read `raw.zip` or `raw/`. It uses the built-in synthetic speckle generator implemented in:
-
-```text
-jodic/datasets/synthetic_speckle.py
-```
-
-Therefore, the project can run even without an external dataset.
-
-To train directly on the unprocessed Synthetic Speckle Dataset, a dedicated raw dataset reader should be added according to the actual internal file structure of the dataset.
 
 ---
 
