@@ -70,8 +70,8 @@ Only the original unprocessed Synthetic Speckle Dataset is provided. Processed d
 The dataset can be downloaded from Baidu Netdisk:
 
 ```text
-Download link: YOUR_BAIDU_NETDISK_LINK
-Extraction code: YOUR_EXTRACTION_CODE
+Download link: https://pan.baidu.com/s/19tsBjtHDs4SqtvNkOPvDaQ?pwd=nwtx
+Extraction code: nwtx 
 ```
 
 ---
